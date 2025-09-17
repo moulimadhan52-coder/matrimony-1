@@ -34,6 +34,8 @@ body{
     padding-left: 150px;
     transition: all 0.3s ease;
     overflow-x: hidden;
+    position: sticky;
+    top: 0%;
 }
 .navbt{
     border: none;
@@ -56,15 +58,16 @@ body{
     justify-content: space-around;
     width: 80%;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.491);
+    background-color: rgba(0, 0, 0, 0.568);
     border-radius: 15px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     
     
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 600px;
+    left: 100px;
 }
 .searchpt{
     margin-top: 48px;
@@ -107,3 +110,97 @@ body{
     width: 185px;
 
 }
+.wel{
+    position: absolute;
+    
+}
+.footer {
+  background-color: white;
+  text-align: left;
+  
+  position: relative;
+  bottom: 0;
+  top: 600px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 75px;
+  
+  
+  
+
+}
+.welcome{
+    color: red;
+    
+}
+.wp{
+    width: 800px;
+}
+.wi{
+    width: 150px;
+    padding-right: 200px;
+}
+.brg {
+  background-color: white;
+  text-align: left;
+  
+  position: relative;
+  bottom: 0;
+  top: 600px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 75px;
+  }
+  .prof{
+    color: red;
+    position: relative;
+    left: 650px;
+  }
+  .u1{
+    color: rgb(255, 155, 171);
+    position: relative;
+    bottom: 50px;
+    left: 710px;
+  }
+  .u2{
+    color: rgb(255, 155, 171);
+    position: relative;
+    bottom: 100px;
+    left: 790px;
+  }
+  .scroll-container {
+  overflow: hidden;
+  width: 70%;
+  position: relative;
+  left: 250px;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
