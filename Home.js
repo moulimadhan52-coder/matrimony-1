@@ -1,6 +1,10 @@
 import "./Home.css"
 import logo from "./logo.png"
 import banner4 from "./banner4.jpg"
+import sucess from "./sucess.jpeg"
+import footerimage from "./footerimage.jpeg"
+import BackToTop from "./backtotop.js";
+
 const images = [
   "https://sriangalammanmatrimony.com/photoprocess.php?image=gallary/2025_08_12_08_54_05Screenshot_20250812_142116_Gallery.jpg&square=150",
   "https://sriangalammanmatrimony.com/photoprocess.php?image=gallary/2025_07_28_10_58_00IMG-20250216-WA0073.jpg&square=150",
@@ -123,7 +127,7 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
 
       </footer>
       <footer className="brg"><div className="b&g">
-        <div><h1 className="prof">Brides & Grooms Profiles</h1><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div> <div className="scroll-container">
+        <div><center><p className="prof">Brides & Grooms <b>Profiles</b></p></center><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div> <div className="scroll-container">
       <div className="scroll-track">
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Profile ${index}`} className="scroll-image" />
@@ -143,7 +147,7 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
           ))}
         </div>
       </div>
-      <div className="FAP"><h1 className="fap">Features & Policies</h1><h1 className="u1">__________</h1><h1 className="u2">__________</h1>
+      <div className="FAP"><p className="fap">Features & <b>Policies</b></p><h1 className="u1">__________</h1><h1 className="u2">__________</h1>
       <div className="table">
         <div className="ss"><div><button className="sb"><i class="fa fa-comments" aria-hidden="true"></i></button></div><div><h2>Free SMS & Chat</h2><p>An important facility such as chat is available in our site, so that people can interact with each other.</p></div></div>
         <div className="ss"><div><button className="sb"><i class="fa fa-book" aria-hidden="true"></i></button></div><div><h2>Auto Match Maker</h2><p>Some new members get registered daily. This matrimony system updates and shows you matched profile.</p></div></div>
@@ -153,10 +157,20 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
         <div className="ss"><div><button className="sb"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></button></div><div><h2>Privacy Policy</h2><p>This electronic website is being operated and owned by sriangalammanmatrimony.com</p></div></div>
         
         </div></div>
-        <div className="sus"><div><h1 className="susp">Sucess Stories</h1><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div></div>
-      
+        <div className="sus"><div className="sushd"><p className="susp">Sucess <b>Stories</b></p><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div>
+        <div className="sushis"><div className="susph"><img className="susph" src={sucess}/><h4>01-11-2023</h4></div><p className="NAM"> NIVETHITHA & MANOJ KUMAR</p><a href ="read less">Read More</a></div></div>
+        <center><div className="restriction"><p><i class="fa fa-lightbulb-o" aria-hidden="true"></i>This Website is Strictly for Matrimonial Purpose only and not a Dating Website and should not be used for posting obscene material.</p></div></center>
+        <div className="end"><center><div className="endcontent"><div className="credits"><p>Sriangalammanmatrimony</p><img className="footerimage" src={footerimage}/></div>
+        <div className="gicontact">
+          <p className="getinc">Get In <b>Contact</b></p><p>If you have any questions about the services we provide simply use the form below. We try and respond to all queries and comments within 24 hours.</p>
+          <div className="bookingaps"><p>Book Appointments</p></div>
+          <div className="emailreg"><input className="mailin" placeholder="enter your email"></input><button className="mailbt" type="submit">submit</button></div>
+          <div className="alldetails"><div><p>9629891299</p><p>info@sriangalammanmatrimony.com</p></div><div><p>FAQ</p><p>terms&Conditions</p></div></div>
+        </div>
+        </div></center>
+      </div>
     </div>
-    
+    <BackToTop />
       </footer>
     
             </div>
