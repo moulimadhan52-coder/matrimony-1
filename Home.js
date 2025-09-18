@@ -107,7 +107,7 @@ function Home(){
                     <option>Chettiyar</option>
                     <option>Mudhaliyar</option>
                 </select></div>
-                <div className="sb"><button className="searchpt">Search Partner</button></div>
+                <div className="sbs"><button className="searchpt">Search Partner</button></div>
 
             </div>
             

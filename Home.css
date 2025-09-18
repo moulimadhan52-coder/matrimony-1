@@ -78,6 +78,8 @@ body{
     color: white;
     border-radius: 15px;
     width: 120px;
+    position: relative;
+    
 }
 .searchpt:hover{
     cursor: pointer;
