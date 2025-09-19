@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    
 }
 p,h1,h2,h3,h4{
   font-family: sans-serif;
@@ -196,7 +197,7 @@ p,h1,h2,h3,h4{
   object-fit: cover;
   margin-right: 10px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 10px;
 }
 
 @keyframes scroll {
@@ -235,7 +236,7 @@ select{
   display: flex;
   color: white;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
   flex-direction: row;
 }
 .sb{
@@ -266,6 +267,7 @@ select{
 .sushd{
   position: relative;
   left: 50px;
+  top:50px ;
 }
 .susph{
   width: 400px;
@@ -294,7 +296,7 @@ select{
 .end{
   background-image: url(bg3.jpg);
   width: 100%;
-  height: 600px;
+  height: 540px;
   color: white;
   display: flex;
    justify-content: space-around;
@@ -342,8 +344,31 @@ top: 50px;
   font-size: xx-large;
 }
 
-body {
-  overflow-x: hidden;
+.branches{
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  flex-wrap: wrap;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 15px;
+  background-image: url(bg3.jpg);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.cities{
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+}
+.sobts{
+  background-color: rgba(248, 248, 255, 0);
+  border-color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  color: white;
 }
 
 

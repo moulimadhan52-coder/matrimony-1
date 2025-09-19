@@ -167,8 +167,11 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
           <div className="emailreg"><input className="mailin" placeholder="enter your email"></input><button className="mailbt" type="submit">submit</button></div>
           <div className="alldetails"><div><p>9629891299</p><p>info@sriangalammanmatrimony.com</p></div><div><p>FAQ</p><p>terms&Conditions</p></div></div>
         </div>
-        </div></center>
-      </div>
+        </div><hr></hr></center>
+      </div><div className="branches"><div className="cities">sriangalammanmatrimony.com Matrimony - muthaliyar matrimony ,, matrimony service in erode , coimbatore , tirupur, salem, all caste,</div><div className="socialmed"><button className="sobts"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+      <button className="sobts"><i class="fa fa-telegram" aria-hidden="true"></i></button>
+      <button className="sobts"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+      <button className="sobts"><i class="fa fa-instagram" aria-hidden="true"></i></button></div></div>
     </div>
     <BackToTop />
       </footer>
