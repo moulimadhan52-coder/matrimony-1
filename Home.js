@@ -3,7 +3,11 @@ import logo from "./logo.png"
 import banner4 from "./banner4.jpg"
 import sucess from "./sucess.jpeg"
 import footerimage from "./footerimage.jpeg"
-import BackToTop from "./backtotop.js";
+import BackToTop from "./backtotop.js"
+
+
+
+
 
 const images = [
   "https://sriangalammanmatrimony.com/photoprocess.php?image=gallary/2025_08_12_08_54_05Screenshot_20250812_142116_Gallery.jpg&square=150",
@@ -18,7 +22,9 @@ const images2 = [
   "https://sriangalammanmatrimony.com/photoprocess.php?image=gallary/2025_09_15_08_31_57WhatsAppImage2025-09-15at1.55.58PM.jpeg&square=150",
 ];
 
+
 function Home(){
+  
     return(
        <div className="body"> <div className="top">
         <div className="head">
@@ -27,7 +33,7 @@ function Home(){
                 
             </h5>
             <p>info@sriangaalammanmatrimony.com</p></div>
-            <div className="btns"><button className="headbt">login</button>
+            <div className="btns"><button className="headbt" >login</button>
             <button className="headbt">register</button></div>
             
             </div>
@@ -181,5 +187,6 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
             
  )
 }
+
 export default Home;
 
