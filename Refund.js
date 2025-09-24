@@ -3,7 +3,7 @@ import logo from "./logo.png"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import footerimage from "./footerimage.jpeg"
-function Log() {
+function Refund() {
     const navigate = useNavigate();
     const [aboutOpen, setAboutOpen] = useState(false);
   return <div className="loginpage">
@@ -24,9 +24,9 @@ function Log() {
               <div className="dropdown-menu">
                 <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
-                <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
+                <button className="dropdown-item"onClick={() => navigate("/privacy")}>Privacy Policy</button>
                 <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
-                <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
+                <button className="dropdown-item" onClick={() => navigate("/disclaimer")}>Disclaimer</button>
                 <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
                 <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
               </div>
@@ -40,10 +40,14 @@ function Log() {
 
 
             </div></div>
-            <div className="logbackg"></div><center><div  className="logtopic"><h1 className="logtopic1"><b>Login</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div></center>
-              <center><div className="logbox">
-                <div className="loginputemail"><p>Email ID.Username or Mobile no</p><input className="loginput" placeholder="Username" type="text"></input></div>
-              <div className="loginputemail"><p>Enter password</p><input className="loginput" placeholder="Password" type="text"></input><p><a href="#" className="frgtpass">forgt password?</a></p></div><button className="logsubmit">Login</button></div></center>
+            <div className="repeatbg"></div>
+            <div className="faqcon">
+              <center><div  className="logtopic"><h1 className="faqtopic"><b>Returns and Cancellation</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div>
+              <div className="faqpoints">
+                <p>We do not entertain Return, Refund and Cancellation in any Circumstances.</p>
+              </div></center>
+            </div>
+             
             <div className="end"><center><div className="endcontent"><div className="credits"><p>Sriangalammanmatrimony</p><img className="footerimage" src={footerimage}/></div>
                     <div className="gicontact">
                       <p className="getinc">Get In <b>Contact</b></p><p>If you have any questions about the services we provide simply use the form below. We try and respond to all queries and comments within 24 hours.</p>
@@ -59,4 +63,4 @@ function Log() {
       <button className="sobts"><i class="fa fa-instagram" aria-hidden="true"></i></button></div></div>
   </div>;
 }
-export default Log;
+export default Refund;

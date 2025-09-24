@@ -47,14 +47,14 @@ function Home(){
               <div className="dropdown-menu">
                 <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
-                <button className="dropdown-item">Privacy Policy</button>
-                <button className="dropdown-item">Refund Policy</button>
-                <button className="dropdown-item">Disclaimer</button>
-                <button className="dropdown-item">Report Misuse</button>
-                <button className="dropdown-item">About Us</button>
+                <button className="dropdown-item"onClick={() => navigate("/privacy")}>Privacy Policy</button>
+                <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
+                <button className="dropdown-item" onClick={() => navigate("/disclaimer")}>Disclaimer</button>
+                <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
+                <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
               </div>
             )}
-                <button className="navbt">|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
+                <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
                 <button className="navbt"><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
                 <button className="navbt"><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
                 <button className="navbt"><i class="fa fa-heart" aria-hidden="true"></i>Success story  |</button>

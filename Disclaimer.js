@@ -3,7 +3,7 @@ import logo from "./logo.png"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import footerimage from "./footerimage.jpeg"
-function Log() {
+function Disclaimer() {
     const navigate = useNavigate();
     const [aboutOpen, setAboutOpen] = useState(false);
   return <div className="loginpage">
@@ -26,9 +26,9 @@ function Log() {
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
                 <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
                 <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
-                <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
+                <button className="dropdown-item" onClick={() => navigate("/disclaimer")}>Disclaimer</button>
                 <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
-                <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
+                <button className="dropdown-item"onClick={() => navigate("/aboutus")}>About Us</button>
               </div>
             )}
                 <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
@@ -40,10 +40,16 @@ function Log() {
 
 
             </div></div>
-            <div className="logbackg"></div><center><div  className="logtopic"><h1 className="logtopic1"><b>Login</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div></center>
-              <center><div className="logbox">
-                <div className="loginputemail"><p>Email ID.Username or Mobile no</p><input className="loginput" placeholder="Username" type="text"></input></div>
-              <div className="loginputemail"><p>Enter password</p><input className="loginput" placeholder="Password" type="text"></input><p><a href="#" className="frgtpass">forgt password?</a></p></div><button className="logsubmit">Login</button></div></center>
+            <div className="repeatbg"></div>
+            <div className="faqcon">
+              <center><div  className="logtopic"><h1 className="faqtopic"><b>Disclaimer</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div>
+              <div className="faqpoints">
+                <p>sriangalammanmatrimony.com is not responsible for any incorrect or inaccurate Content posted on the Site or in connection with the sriangalammanmatrimony.com Service, whether caused by users visiting the Site, Members or by any of the equipment or programming associated with or utilized in the Service, nor for the conduct of any user and/or Member of the sriangalammanmatrimony.com Service whether online or offline.sriangalammanmatrimony.com assumes no responsibility for any error, omission, interruption, deletion, defect, delay in operation or transmission, communications line failure, theft or destruction or unauthorized access to, or alteration of, user and/or Member communications. sriangalammanmatrimony.com is not responsible for any problems or technical malfunction of any telephone network or lines, computer on-line-systems, servers or providers, computer equipment, software, failure of email or players on account of technical problems or traffic congestion on the Internet or at any website or combination thereof, including injury or damage to users and/or Members or to any other person's keralaweds related to or resulting from participating or downloading materials in connection with the sriangalammanmatrimony.com Site and/or in connection with the sriangalammanmatrimony.com Service. </p>
+                <p>Under no circumstances will sriangalammanmatrimony.com be responsible for any loss or damage to any person resulting from anyone's use of the Site or the Service and/or any Content posted on the sriangalammanmatrimony.com Site or transmitted to sriangalammanmatrimony.com Members.</p>
+                <p>The exchange of profile(s) through or by sriangalammanmatrimony.com Should not in any way be construed as any offer and/or recommendation from/by sriangalammanmatrimony.com sriangalammanmatrimony.com Shall not be responsible for any loss or damage to any individual arising out of, or subsequent to, relations established pursuant to the use of sriangalammanmatrimony.com The Site and the Service are provided "AS-IS AVALIABLE BASIS" and sriangalammanmatrimony.com expressly disclaims any warranty of fitness for a particular purpose or non-infringement. sriangalammanmatrimony.com cannot guarantee and does not promise any specific results from use of the Site and/or the sriangalammanmatrimony.com Service.</p>
+              </div></center>
+            </div>
+             
             <div className="end"><center><div className="endcontent"><div className="credits"><p>Sriangalammanmatrimony</p><img className="footerimage" src={footerimage}/></div>
                     <div className="gicontact">
                       <p className="getinc">Get In <b>Contact</b></p><p>If you have any questions about the services we provide simply use the form below. We try and respond to all queries and comments within 24 hours.</p>
@@ -59,4 +65,4 @@ function Log() {
       <button className="sobts"><i class="fa fa-instagram" aria-hidden="true"></i></button></div></div>
   </div>;
 }
-export default Log;
+export default Disclaimer;
