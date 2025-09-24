@@ -1,5 +1,7 @@
+
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
     
 }
 p,h1,h2,h3,h4{
@@ -13,6 +15,18 @@ p,h1,h2,h3,h4{
     background-color: white;
     padding-left: 200px;
     padding-right: 200px;
+    width: 90%;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+}
+.correct{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  justify-content: space-between;
+  position: relative;
+  right: 100px;
 }
 .headbt{
     height: 45px;
@@ -38,6 +52,9 @@ p,h1,h2,h3,h4{
     padding-left: 150px;
     transition: all 0.3s ease;
     overflow-x: hidden;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
     
   
 }
@@ -90,9 +107,10 @@ p,h1,h2,h3,h4{
     background: black;
 }
 .backg{
-    width: 100%;
+    width: 105%;
     height: 100vh;
     position: fixed;
+    right: 1px;
     
     background-size: cover;
     z-index: -1;
@@ -126,8 +144,9 @@ p,h1,h2,h3,h4{
   
   position: relative;
   bottom: 0;
+  right: 8px;
   top: 600px;
-  width: 100%;
+  width: 101%;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -151,11 +170,11 @@ p,h1,h2,h3,h4{
 .brg {
   background-color: white;
   text-align: left;
-  
+  right: 8px;
   position: relative;
   bottom: 0;
   top: 600px;
-  width: 100%;
+  width: 101%;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -295,7 +314,9 @@ select{
 }
 .end{
   background-image: url(bg3.jpg);
-  width: 100%;
+  width: 110%;
+  position: relative;
+  right: 8px;
   height: 540px;
   color: white;
   display: flex;
@@ -311,6 +332,8 @@ select{
   display: flex;
   margin-top: 75px;
   justify-content: space-between;
+  position: relative;
+  bottom: 6px;
   
 }
 .bookingaps{
@@ -355,6 +378,7 @@ top: 50px;
   background-image: url(bg3.jpg);
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
+  width: 110%;
 }
 .cities{
   display: flex;
@@ -621,5 +645,226 @@ top: 50px;
 .back-to-top:hover {
   color: black;
 }
+.correctlog{
+  display: flex;
+  text-align: left;
+  width: 70%;
+  justify-content: space-around;
+  
+  
+}
+.loghead{
+  background-color: white;
+  width: 110%;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+  
+}
+.logbackg{
+  background-image: url(bg9.jpg);
+  width: 110%;
+  position: fixed;
+  right: 1px;
+  height: 100vh;
+  top: 0;
+  z-index: -5;
+  background-size: cover;
+}
+.logbox{
+  margin-top: 100px;
+  background-color: white;
+  width: 600px;
+  border: none;
+  border-radius: 20px;
+  height: 400px;
+  text-align: left;
+  padding: 50px;
+  font-size: medium;
+  color: maroon;
+  justify-content: space-between;
+  padding-left: 90px;
+  margin-bottom: 50px;
+  
+}
+.loginput{
+  width: 550px;
+  height: 55px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.loginputemail{
+  margin-top: 35px;
+}
+.frgtpass{
+  text-align: right;
+  color: maroon;
+  position: relative;
+  left: 440px;
+}
+.logsubmit{
+  width: 560px;
+  height: 55px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right,orange,red);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
+}
+.logtopic{
+  color: white;
+  line-height: 1px;
+  position: relative;
+  top: 60px;
+}
+.logu1{
+  color: rgb(255, 155, 171);
+  position: relative;
+  right: 25px;
+}
+.logu2{
+  color: rgb(255, 155, 171);
+  position: relative;
+  left: 25px;
+}
+.logtopic1{
+  font-size: xx-large;
+}
+.branches1{
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  flex-wrap: wrap;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 15px;
+  background-image: url(bg3.jpg);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 80px;
+  width: 80%;
+  position: relative;
+  right: 8px;
+}
+.signbox{
+  margin-top: 100px;
+  background-color: white;
+  width: 750px;
+  border: none;
+  border-radius: 20px;
+  height: max-content;
+  
+  text-align: left;
+  padding: 50px;
+  font-size: medium;
+  color: orange;
+  justify-content: space-between;
+  padding: 90px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 5px;
+}
+.reginput1{
+  width: 350px;
+  height: 55px;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  text-align: left;
+ 
+}
+.reginput2{
+  width: 230px;
+  height: 55px;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  text-align: left;
+  
+}
+.signsubmit{
+  width: 750px;
+  height: 55px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right,orange,red);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
 
+}
+.mobverify{
+  color: black;
+  padding-left: 430px;
+  font-size: small;
+}
+.abtyrself{
+  width: 750px;
+  height: 75px;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+ 
+}
+/* Dropdown wrapper */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  position: absolute;
+  top: 40px; /* below navbar */
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  z-index: 100;
+  width: 200px;
+  position: fixed;
+  top: 150px;
+  left: 250px;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  background: white;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.repeatbg{
+  background: url(new-top.png);
+  background-repeat: repeat-x;
+
+  width: 110%;
+  height: 25px;
+  position: relative;
+  bottom: 10px;
+  right: 8px;
+}
+.faqcon{
+  height: max-content;
+  color: black;
+  margin-bottom: 150px;
+}
+.faqtopic{
+  color: maroon;
+}
+.faqpoints{
+  text-align: left;
+  color: black;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+  top: 95px;
+  line-height: 35px;
+}
 

@@ -4,6 +4,8 @@ import banner4 from "./banner4.jpg"
 import sucess from "./sucess.jpeg"
 import footerimage from "./footerimage.jpeg"
 import BackToTop from "./backtotop.js"
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 
@@ -24,28 +26,34 @@ const images2 = [
 
 
 function Home(){
-  
+  const navigate = useNavigate();
+  const [aboutOpen, setAboutOpen] = useState(false);
     return(
        <div className="body"> <div className="top">
-        <div className="head">
+        <div className="head"><div className="correct">
             <div className="logo"><img src={logo}/></div>
             <div className="ctinfo"><h5 className="ph">+919443946541
                 
             </h5>
             <p>info@sriangaalammanmatrimony.com</p></div>
-            <div className="btns"><button className="headbt" >login</button>
-            <button className="headbt">register</button></div>
+            <div className="btns"><button className="headbt" onClick={() => navigate("/login")} >login</button>
+            <button className="headbt" onClick={() => navigate("/signup")}>register</button></div></div>
             
             </div>
             <div className="navbar">
-                <button className="navbt"><i class="fa fa-home" aria-hidden="true"></i>Home  |</button>
-                <select className="navbt"><option>About Us</option>
-                <option>FAQs</option>
-                <option>Terms & Conditions</option>
-                <option>Privacy Policy</option>
-                <option>Refund Policy</option>
-                <option>Disclaimer</option>
-                <option>Report Misissue</option></select>
+                <button className="navbt" onClick={() => navigate("/")}><i class="fa fa-home" aria-hidden="true"></i>Home  |</button>
+                <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us
+                </button>{aboutOpen && (
+              <div className="dropdown-menu">
+                <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
+                <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
+                <button className="dropdown-item">Privacy Policy</button>
+                <button className="dropdown-item">Refund Policy</button>
+                <button className="dropdown-item">Disclaimer</button>
+                <button className="dropdown-item">Report Misuse</button>
+                <button className="dropdown-item">About Us</button>
+              </div>
+            )}
                 <button className="navbt">|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
                 <button className="navbt"><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
                 <button className="navbt"><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
@@ -189,4 +197,3 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
 }
 
 export default Home;
-
