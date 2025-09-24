@@ -401,6 +401,7 @@ top: 50px;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    width: 100vw;
   }
 
   .headbt {
@@ -413,6 +414,7 @@ top: 50px;
     padding-left: 0;
     text-align: center;
     height: auto;
+    width: 100vw;
   }
 
   .navbt {
@@ -425,7 +427,7 @@ top: 50px;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    height: 100px;
+    height: 250px;
     position: static;
     margin-top: 15px;
   }
@@ -493,6 +495,8 @@ top: 50px;
   .head {
     padding: 10px 40px;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
   }
 
   .navbar {
@@ -502,6 +506,7 @@ top: 50px;
   .selection {
     width: 95%;
     left: auto;
+    height: 320px;
     top: auto;
     margin: 20px auto;
     position: relative;
@@ -547,6 +552,7 @@ top: 50px;
   .head {
     padding-left: 50px;
     padding-right: 50px;
+    width: 100vw;
   }
 
   .navbar {
@@ -556,6 +562,7 @@ top: 50px;
   .selection {
     width: 85%;
     left: auto;
+    height: 250px;
     top: 500px;
     margin: 0 auto;
   }
@@ -586,6 +593,47 @@ top: 50px;
   }
 }
 
+@media (min-width:1024px) and (max-width: 1200px) {
+  .head {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .navbar {
+    padding-left: 150px;
+  }
+
+  .selection {
+    width: 80%;
+    height: 220px;
+    left: 100px;
+    top: 600px;
+  }
+
+  .footer,
+  .brg {
+    flex-direction: row;
+    padding-top: 75px;
+  }
+
+  .wp {
+    width: 800px;
+  }
+
+  .wi {
+    width: 150px;
+    padding-right: 200px;
+  }
+
+  .scroll-container {
+    width: 70%;
+    left: 250px;
+  }
+
+  .prof {
+    left: 650px;
+  }
+}
 
 @media (min-width: 1200px) {
   .head {
@@ -599,6 +647,7 @@ top: 50px;
 
   .selection {
     width: 80%;
+    height: 220px;
     left: 100px;
     top: 600px;
   }
