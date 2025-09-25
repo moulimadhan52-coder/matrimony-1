@@ -32,8 +32,8 @@ function Terms() {
               </div>
             )}
                 <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
-                <button className="navbt"><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
-                <button className="navbt"><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
+                <button className="navbt" onClick={() => navigate("/search")}><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
+                <button className="navbt" onClick={() => navigate("/membership")}><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
                 <button className="navbt"><i class="fa fa-heart" aria-hidden="true"></i>Success story  |</button>
                 <button className="navbt"><i class="fa fa-map-marker" aria-hidden="true"></i>Contact Us</button>
                 

@@ -11,6 +11,8 @@ import Refund from "./Refund";
 import Disclaimer from "./Disclaimer";
 import Issue from "./Issue";
 import Aboutus from "./Aboutus";
+import Search from "./Search";
+import Membership from "./Membership";
 
 
 
@@ -28,6 +30,8 @@ root.render(
       <Route path="/disclaimer" element={<Disclaimer />} />
       <Route path="/issue" element={<Issue />} />
       <Route path="/aboutus" element={<Aboutus />} />
+      <Route path="/search" element={<Search />} />
+      <Route path="/membership" element={<Membership />} />
     </Routes>
   </BrowserRouter>
 );

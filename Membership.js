@@ -3,7 +3,7 @@ import logo from "./logo.png"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import footerimage from "./footerimage.jpeg"
-function Refund() {
+function Membership() {
     const navigate = useNavigate();
     const [aboutOpen, setAboutOpen] = useState(false);
   return <div className="loginpage">
@@ -22,12 +22,12 @@ function Refund() {
                 <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us
                 </button>{aboutOpen && (
               <div className="dropdown-menu">
-                <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
-                <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
-                <button className="dropdown-item"onClick={() => navigate("/privacy")}>Privacy Policy</button>
-                <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
-                <button className="dropdown-item" onClick={() => navigate("/disclaimer")}>Disclaimer</button>
-                <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
+                <button className="dropdown-item"onClick={() => navigate("/faq")}>FAQs</button>
+                <button className="dropdown-item"onClick={() => navigate("/terms")}>Terms & Conditions</button>
+                <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
+                <button className="dropdown-item"onClick={() => navigate("/refund")}>Refund Policy</button>
+                <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
+                <button className="dropdown-item"onClick={() => navigate("/issue")}>Report Misuse</button>
                 <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
               </div>
             )}
@@ -42,11 +42,37 @@ function Refund() {
             </div></div>
             <div className="repeatbg"></div>
             <div className="faqcon">
-              <center><div  className="logtopic"><h1 className="faqtopic"><b>Returns and Cancellation</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div>
-              <div className="faqpoints">
-                <p>We do not entertain Return, Refund and Cancellation in any Circumstances.</p>
-              </div></center>
+              <center><div  className="logtopic"><h1 className="faqtopic"><b>FAQs</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div>
+              </center>
+              <div className="memberplan">
+                <p><b>BASIC</b></p>
+                <p className="strike"><b>INR:1200</b></p>
+                <p><b>OFFER PRICE: 1000</b></p>
+                <p><b>DAYS: UNLIM</b></p>
+                <p>Profile Display</p>
+                <p>Chating Option</p>
+                <p>Express Interest</p>
+                <p>Unlimited Profile Search</p>
+                <p>Verified Phone Numbers</p>
+                <p>Profile Up-gradation</p>
+              </div>
+              <div className="memberpay">
+                <p><b>Allowed Contacts/Address: UNLIM</b></p>
+                <button className="memberpaybtn" onClick={() => navigate("/login")}>Pay Now</button>
+              </div>
             </div>
+            <center><div className="bnkdtls">
+                <h4>1.Bank Details </h4>
+                <p>Bank Name - CITY UNION BANK SIVAGIRI </p>
+                <p>Account Name -  S.P.SUBBIAH KAMALAKANNAN</p>
+                <h1>   </h1>
+                <p>Branch - Will be added soon</p>
+                <p>Account No - 500101012409753</p>
+                <p>IFSC CODE - CUIB0000636  </p>
+                <p>Pin Code - 638109</p>
+                <h1></h1>
+                <h4>G-Pay: 9443946541 </h4>
+            </div></center>
              
             <div className="end"><center><div className="endcontent"><div className="credits"><p>Sriangalammanmatrimony</p><img className="footerimage" src={footerimage}/></div>
                     <div className="gicontact">
@@ -63,4 +89,4 @@ function Refund() {
       <button className="sobts"><i class="fa fa-instagram" aria-hidden="true"></i></button></div></div>
   </div>;
 }
-export default Refund;
+export default Membership;

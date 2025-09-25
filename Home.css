@@ -819,6 +819,7 @@ top: 50px;
   height: 55px;
   background-color: rgba(128, 128, 128, 0.176);
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   text-align: left;
  
 }
@@ -827,6 +828,7 @@ top: 50px;
   height: 55px;
   background-color: rgba(128, 128, 128, 0.176);
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   text-align: left;
   
 }
@@ -916,4 +918,141 @@ top: 50px;
   top: 95px;
   line-height: 35px;
 }
+.searchbox{
+  margin-top: 100px;
+  background-color: white;
+  width: 750px;
+  border: none;
+  border-radius: 20px;
+  height: max-content;
+  font-size: x-large;
+  text-align: left;
+  padding: 50px;
+  font-size: medium;
+  color: orange;
+  justify-content: space-between;
+  padding: 90px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 5px;
+}
+.srchgenin{
+  width: 750px;
+  height: 50px;
+  font-size: medium;
+  color: rgb(82, 81, 81);
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+.srchagein{
+  width: 360px;
+  height: 50px;
+   font-size: medium;
+  color: rgb(82, 81, 81);
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+.srchgeninmul{
+  width: 750px;
+  height: 75px;
+   font-size: medium;
+  color: rgb(82, 81, 81);
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+.srchgeninmul1{
+  width: 360px;
+  height: 75px;
+   font-size: medium;
+  color: rgb(82, 81, 81);
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.176);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+.searchcheck{
+  margin-top: 10px;
+  font-size: large;
+  width: 360px;
+}
+.srchrule{
+  color: black;
+  font-size: small;
+}
+.srchchk{
+  width: 20px;
+  height:20px;
+  margin-right: 10px;
+}
+
+select[multiple]::-webkit-scrollbar {
+  width: 15px;              
+}
+
+select[multiple]::-webkit-scrollbar-track {
+  background: #f1f1f1;    
+  border-radius: 10px;
+}
+
+select[multiple]::-webkit-scrollbar-thumb {
+  background-color: #ff4d4d; 
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; 
+}
+
+select[multiple]::-webkit-scrollbar-thumb:hover {
+  background-color: #cc0000; 
+}
+
+select[multiple] {
+  scrollbar-width: thin;             
+  scrollbar-color: #ff4d4d #f1f1f1;  
+}
+.memberplan{
+  background-color: rgb(255, 217, 0);
+  width: 350px;
+  margin-left: 150px;
+  height: 500px;
+  margin-top: 150px;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 30px;
+  
+}
+.strike{
+  text-decoration: line-through;
+}
+.memberpay{
+  width: 350px;
+  height: 110px;
+  background-color: purple;
+  margin-left: 150px;
+  background-image: url(pay_back.jpg);
+  
+  text-align: center;
+  color: #f1f1f1;
+  position: relative;
+  bottom: 18px;
+  padding-top: 8px;
+  justify-content: center;
+}
+.memberpaybtn{
+  height: 35px;
+  width: 85px;
+  background-color: rgb(11, 147, 93);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.bnkdtls{
+  text-align: center;
+}
+
 
