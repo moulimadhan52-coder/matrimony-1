@@ -27,11 +27,13 @@ const images2 = [
 
 function Home(){
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const [aboutOpen, setAboutOpen] = useState(false);
     return(
        <div className="body"> <div className="top">
         <div className="head"><div className="correct">
-            <div className="logo"><img src={logo}/></div>
+            <div className="logo"><img className="logoimage" src={logo}/></div>
             <div className="ctinfo"><h5 className="ph">+919443946541
                 
             </h5>
@@ -40,29 +42,33 @@ function Home(){
             <button className="headbt" onClick={() => navigate("/signup")}>register</button></div></div>
             
             </div>
-            <div className="navbar">
-                <button className="navbt" onClick={() => navigate("/")}><i class="fa fa-home" aria-hidden="true"></i>Home  |</button>
-                <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us
-                </button>{aboutOpen && (
-              <div className="dropdown-menu">
-                <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
+          <div className="navbar">
+  <button className="hamburger" onClick={() => setAboutOpen(false) || setMenuOpen(!menuOpen)}>
+    <i className="fa fa-bars"></i>
+  </button>
+
+  <div className={`nav-links ${menuOpen ? "show" : ""}`}>
+    <button className="navbt" onClick={() => navigate("/")}>Home |</button>
+    <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us</button>
+    {aboutOpen && (
+      <div className="dropdown-menu">
+        <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
-                <button className="dropdown-item"onClick={() => navigate("/privacy")}>Privacy Policy</button>
+                <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
                 <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
-                <button className="dropdown-item" onClick={() => navigate("/disclaimer")}>Disclaimer</button>
+                <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
                 <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
                 <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
-              </div>
-            )}
-                <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
-                <button className="navbt" onClick={() => navigate("/search")}><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
-                <button className="navbt" onClick={() => navigate("/membership")}><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
-                <button className="navbt"><i class="fa fa-heart" aria-hidden="true"></i>Success story  |</button>
-                <button className="navbt"><i class="fa fa-map-marker" aria-hidden="true"></i>Contact Us</button>
-                
+      </div>
+    )}
+    <button className="navbt" onClick={() => navigate("/signup")}>| Sign Up |</button>
+    <button className="navbt" onClick={() => navigate("/search")}>Search |</button>
+    <button className="navbt" onClick={() => navigate("/membership")}>Membership |</button>
+    <button className="navbt" onClick={() => navigate("/success")}>Success |</button>
+    <button className="navbt" onClick={() => navigate("/contactus")}>Contact</button>
+  </div>
+</div>
 
-
-            </div>
             <div className="backg"></div>
             <center><div className="selection">
                 <div className="lfr">
@@ -141,7 +147,7 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
 
       </footer>
       <footer className="brg"><div className="b&g">
-        <div><center><p className="prof">Brides & Grooms <b>Profiles</b></p></center><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div> <div className="scroll-container">
+        <div><center><p className="prof">Brides & Grooms <b>Profiles</b></p><h1 className="u1">__________</h1><h1 className="u2">__________</h1></center></div> <div className="scroll-container">
       <div className="scroll-track">
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Profile ${index}`} className="scroll-image" />
@@ -171,7 +177,7 @@ Sriangalamman Matrimony  is the most trusted matrimony service for thousands who
         <div className="ss"><div><button className="sb"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></button></div><div><h2>Privacy Policy</h2><p>This electronic website is being operated and owned by sriangalammanmatrimony.com</p></div></div>
         
         </div></div>
-        <div className="sus"><div className="sushd"><p className="susp">Sucess <b>Stories</b></p><h1 className="u1">__________</h1><h1 className="u2">__________</h1></div>
+        <div className="sus"><div className="sushd"><p className="susp">Sucess <b>Stories</b></p></div><h1 className="u1">__________</h1><h1 className="u2">__________</h1>
         <div className="sushis"><div className="susph"><img className="susph" src={sucess}/><h4>01-11-2023</h4></div><p className="NAM"> NIVETHITHA & MANOJ KUMAR</p><a href ="read less">Read More</a></div></div>
         <center><div className="restriction"><p><i class="fa fa-lightbulb-o" aria-hidden="true"></i>This Website is Strictly for Matrimonial Purpose only and not a Dating Website and should not be used for posting obscene material.</p></div></center>
         <div className="end"><center><div className="endcontent"><div className="credits"><p>Sriangalammanmatrimony</p><img className="footerimage" src={footerimage}/></div>

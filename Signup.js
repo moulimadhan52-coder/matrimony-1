@@ -3,8 +3,10 @@ import logo from "./logo.png"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import footerimage from "./footerimage.jpeg"
+import BackToTop from "./backtotop.js"
 function Signup() {
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
     const [aboutOpen, setAboutOpen] = useState(false);
   return <div className="loginpage">
     <div className="loghead">
@@ -17,29 +19,32 @@ function Signup() {
                     <div className="btns"><button className="headbt" onClick={() => navigate("/login")} >login</button>
                     <button className="headbt" onClick={() => navigate("/signup")}>register</button></div></div></center>
     </div>
-    <div className="lognav"><div className="navbar">
-                <button className="navbt" onClick={() => navigate("/")}><i class="fa fa-home" aria-hidden="true"></i>Home  |</button>
-                <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us
-                </button>{aboutOpen && (
-              <div className="dropdown-menu">
-                <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
+    <div className="lognav"> <div className="navbar">
+  <button className="hamburger" onClick={() => setAboutOpen(false) || setMenuOpen(!menuOpen)}>
+    <i className="fa fa-bars"></i>
+  </button>
+
+  <div className={`nav-links ${menuOpen ? "show" : ""}`}>
+    <button className="navbt" onClick={() => navigate("/")}>Home |</button>
+    <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us</button>
+    {aboutOpen && (
+      <div className="dropdown-menu">
+        <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
                 <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
                 <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
                 <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
                 <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
                 <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
-              </div>
-            )}
-                <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
-                <button className="navbt" onClick={() => navigate("/search")}><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
-                <button className="navbt" onClick={() => navigate("/membership")}><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
-                <button className="navbt"><i class="fa fa-heart" aria-hidden="true"></i>Success story  |</button>
-                <button className="navbt"><i class="fa fa-map-marker" aria-hidden="true"></i>Contact Us</button>
-                
-
-
-            </div></div>
+      </div>
+    )}
+    <button className="navbt" onClick={() => navigate("/signup")}>| Sign Up |</button>
+    <button className="navbt" onClick={() => navigate("/search")}>Search |</button>
+    <button className="navbt" onClick={() => navigate("/membership")}>Membership |</button>
+    <button className="navbt" onClick={() => navigate("/success")}>Success |</button>
+    <button className="navbt" onClick={() => navigate("/contactus")}>Contact</button>
+  </div>
+</div></div>
             <div className="logbackg"></div><center><div  className="logtopic"><h1 className="logtopic1"><b>Free Signup</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div></center>
               <center><div className="signbox">
                 <div className="regcon"><p>First Name</p><input placeholder="first name" className="reginput1"></input></div><div className="regcon"><p>Surname</p><input placeholder="Surname" className="reginput1"></input></div>
@@ -202,6 +207,7 @@ function Signup() {
                       <div className="alldetails"><div><p>9629891299</p><p>info@sriangalammanmatrimony.com</p></div><div><p>FAQ</p><p>terms&Conditions</p></div></div>
                     </div>
                     </div></center>
+                    <BackToTop />
                   </div>
                   <div className="branches1"><div className="cities">sriangalammanmatrimony.com Matrimony - muthaliyar matrimony ,, matrimony service in erode , coimbatore , tirupur, salem, all caste,</div><div className="socialmed"><button className="sobts"><i class="fa fa-facebook" aria-hidden="true"></i></button>
       <button className="sobts"><i class="fa fa-telegram" aria-hidden="true"></i></button>

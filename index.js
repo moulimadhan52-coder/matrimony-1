@@ -13,6 +13,8 @@ import Issue from "./Issue";
 import Aboutus from "./Aboutus";
 import Search from "./Search";
 import Membership from "./Membership";
+import Success from "./Success";
+import Contactus from "./Contactus";
 
 
 
@@ -32,6 +34,8 @@ root.render(
       <Route path="/aboutus" element={<Aboutus />} />
       <Route path="/search" element={<Search />} />
       <Route path="/membership" element={<Membership />} />
+      <Route path="/success" element={<Success />} />
+      <Route path="/contactus" element={<Contactus />} />
     </Routes>
   </BrowserRouter>
 );

@@ -3,13 +3,15 @@ import logo from "./logo.png"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import footerimage from "./footerimage.jpeg"
+import BackToTop from "./backtotop.js"
 function Search() {
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
     const educations = [
   "High School (10th)",
   "Higher Secondary (12th)",
   
-  // Undergraduate Degrees
+ 
   "BA (Bachelor of Arts)",
   "BSc (Bachelor of Science)",
   "BCom (Bachelor of Commerce)",
@@ -22,7 +24,7 @@ function Search() {
   "LLB (Bachelor of Law)",
   "BEd (Bachelor of Education)",
   
-  // Postgraduate Degrees
+  
   "MA (Master of Arts)",
   "MSc (Master of Science)",
   "MCom (Master of Commerce)",
@@ -36,7 +38,7 @@ function Search() {
   "LLM (Master of Laws)",
   "MEd (Master of Education)",
   
-  // Professional Courses
+  
   "CA (Chartered Accountant)",
   "CFA (Chartered Financial Analyst)",
   "CS (Company Secretary)",
@@ -47,7 +49,7 @@ function Search() {
   "Polytechnic"
 ];
 const occupations = [
-  // Business & Management
+ 
   "Business / Self Employed",
   "Entrepreneur",
   "Management Professional",
@@ -55,7 +57,6 @@ const occupations = [
   "Sales Professional",
   "HR Professional",
 
-  // Finance & Legal
   "Accountant",
   "Banking Professional",
   "Chartered Accountant",
@@ -64,7 +65,7 @@ const occupations = [
   "Investment Professional",
   "Lawyer / Legal Professional",
 
-  // IT & Technology
+  
   "Software Engineer",
   "Hardware / Networking Professional",
   "IT Professional",
@@ -72,26 +73,26 @@ const occupations = [
   "Data Scientist",
   "AI / ML Engineer",
 
-  // Medicine & Healthcare
+ 
   "Doctor",
   "Nurse",
   "Pharmacist",
   "Healthcare Professional",
 
-  // Engineering & Technical
+  
   "Engineer",
   "Civil Engineer",
   "Mechanical Engineer",
   "Electrical Engineer",
   "Architect",
 
-  // Education & Research
+  
   "Teacher",
   "Professor / Lecturer",
   "Research Scholar",
   "Scientist",
 
-  // Media & Creative
+  
   "Advertising / Media Professional",
   "Artist",
   "Actor / Actress",
@@ -99,13 +100,13 @@ const occupations = [
   "Writer / Journalist",
   "Designer",
 
-  // Government & Defence
+ 
   "Government Employee",
   "Defence Personnel",
   "Civil Services (IAS / IPS / IFS)",
   "Police / Security Services",
 
-  // Skilled Trades & Others
+  
   "Agriculture",
   "Farmer",
   "Pilot",
@@ -142,29 +143,32 @@ const occupations = [
                     <div className="btns"><button className="headbt" onClick={() => navigate("/login")} >login</button>
                     <button className="headbt" onClick={() => navigate("/signup")}>register</button></div></div></center>
     </div>
-    <div className="lognav"><div className="navbar">
-                <button className="navbt" onClick={() => navigate("/")}><i class="fa fa-home" aria-hidden="true"></i>Home  |</button>
-                <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us
-                </button>{aboutOpen && (
-              <div className="dropdown-menu">
-                <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
+    <div className="lognav"> <div className="navbar">
+  <button className="hamburger" onClick={() => setAboutOpen(false) || setMenuOpen(!menuOpen)}>
+    <i className="fa fa-bars"></i>
+  </button>
+
+  <div className={`nav-links ${menuOpen ? "show" : ""}`}>
+    <button className="navbt" onClick={() => navigate("/")}>Home |</button>
+    <button className="navbt" onClick={() => setAboutOpen(!aboutOpen)}>About Us</button>
+    {aboutOpen && (
+      <div className="dropdown-menu">
+        <button className="dropdown-item" onClick={() => navigate("/faq")}>FAQs</button>
                 <button className="dropdown-item" onClick={() => navigate("/terms")}>Terms & Conditions</button>
                 <button className="dropdown-item" onClick={() => navigate("/privacy")}>Privacy Policy</button>
                 <button className="dropdown-item" onClick={() => navigate("/refund")}>Refund Policy</button>
                 <button className="dropdown-item"onClick={() => navigate("/disclaimer")}>Disclaimer</button>
                 <button className="dropdown-item" onClick={() => navigate("/issue")}>Report Misuse</button>
                 <button className="dropdown-item" onClick={() => navigate("/aboutus")}>About Us</button>
-              </div>
-            )}
-                <button className="navbt" onClick={() => navigate("/signup")}>|<i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up  |</button>
-                <button className="navbt" onClick={() => navigate("/search")}><i class="fa fa-search" aria-hidden="true"></i>Search  |</button>
-                <button className="navbt" onClick={() => navigate("/membership")}><i class="fa fa-tags" aria-hidden="true"></i>Membership  |</button>
-                <button className="navbt"><i class="fa fa-heart" aria-hidden="true"></i>Success story  |</button>
-                <button className="navbt"><i class="fa fa-map-marker" aria-hidden="true"></i>Contact Us</button>
-                
-
-
-            </div></div>
+      </div>
+    )}
+    <button className="navbt" onClick={() => navigate("/signup")}>| Sign Up |</button>
+    <button className="navbt" onClick={() => navigate("/search")}>Search |</button>
+    <button className="navbt" onClick={() => navigate("/membership")}>Membership |</button>
+    <button className="navbt" onClick={() => navigate("/success")}>Success |</button>
+    <button className="navbt" onClick={() => navigate("/contactus")}>Contact</button>
+  </div>
+</div></div>
             <div className="logbackg"></div><center><div  className="logtopic"><h1 className="logtopic1"><b>Regular Search</b></h1><h1 className="logu1">_______</h1><h1 className="logu2">_______</h1></div></center>
               <center><div className="searchbox">
                 <div className="searchgender"><p>Gender</p><select className="srchgenin">
@@ -256,6 +260,7 @@ const occupations = [
                       <div className="alldetails"><div><p>9629891299</p><p>info@sriangalammanmatrimony.com</p></div><div><p>FAQ</p><p>terms&Conditions</p></div></div>
                     </div>
                     </div></center>
+                    <BackToTop />
                   </div>
                   <div className="branches1"><div className="cities">sriangalammanmatrimony.com Matrimony - muthaliyar matrimony ,, matrimony service in erode , coimbatore , tirupur, salem, all caste,</div><div className="socialmed"><button className="sobts"><i class="fa fa-facebook" aria-hidden="true"></i></button>
       <button className="sobts"><i class="fa fa-telegram" aria-hidden="true"></i></button>

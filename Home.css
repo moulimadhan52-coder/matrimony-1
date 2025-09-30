@@ -20,6 +20,8 @@ p,h1,h2,h3,h4{
     right: 10px;
     bottom: 10px;
 }
+
+
 .correct{
   display: flex;
   justify-content: center;
@@ -396,12 +398,86 @@ top: 50px;
 }
 
 
+
 @media (max-width: 576px) {
+  
+@media (max-width: 576px) {
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  
+  .head,
+  .navbar,
+  .selection,
+  .footer,
+  .end,
+  .branches,
+  .repeatbg,
+  
+  .loghead {
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+ 
+  * {
+    box-sizing: border-box;
+  }
+}
+
   .head {
-    flex-direction: column;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    
     align-items: center;
     padding: 10px;
-    width: 100vw;
+    width: 120vw;
+  }
+  .correct{
+    display: flex;
+    flex-direction: column;
+   padding-left: 65px;
+    
+  }
+  .correctlog{
+    display: flex;
+    flex-direction: column;
+   width: 90vw;
+   align-items: center;
+  }
+
+  .btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    
+  }
+  .headbt{
+    background-color: none;
+    background: none;
+  }
+  .logo{
+    width: 90vw;
+  }
+  .logoimage{
+    width: 80vw;
+    display: block;
+
+  }
+  .ctinfo{
+    display: none;
   }
 
   .headbt {
@@ -448,6 +524,13 @@ top: 50px;
     padding: 20px;
     top: auto;
   }
+  .welcome{
+    width: 70vw;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: left;
+    align-items: left;
+  }
 
   .wp {
     width: 100%;
@@ -461,21 +544,50 @@ top: 50px;
   }
 
   .scroll-container {
-    width: 100%;
+    width: 100vw;
+    
     left: 0;
+  }
+  .brg{
+    width: 100vw;
+    position: relative;
+    left: 1px;
+    padding: 0px;
   }
 
   .prof,
   .u1,
   .u2 {
-    position: static;
-    text-align: center;
+
+    
+    
   }
 
   .table {
     left: 0;
-    width: 100%;
+    width: 70vw;
+    height: max-content;
+    position: relative;
+    right: 500px;
+    margin-left: 80x;
     justify-content: center;
+
+  }
+  .FAP{
+    position: relative;
+    
+    width: 100vw;
+    padding-left: 75px;
+    align-items: center;
+   
+  }
+  .fap{
+    position: relative;
+   font-size: 250%;
+   left: 1px;
+   align-items: center;
+   top: 55px;
+    
   }
 
   .sushis {
@@ -484,11 +596,139 @@ top: 50px;
   }
 
   .susph {
-    width: 100%;
+    width: 80%;
     font-size: medium;
+    background: none;
+    color: black;
+  }
+  .susp{
+    position: relative;
+    left: 1px;
+    align-items: center;
+    line-height: 2px;
+  }
+  .u1{
+   position: relative;
+   left: 1px;
+   top: 10px;
+   bottom: 55px;
+   align-items: center;
+   
+   
+    
+  }
+  .u2{
+    position: relative;
+    left: 100px;
+    top: 1px;
+     bottom: 35px;
+     align-items: center;
+     
+   
+   
+ 
+  }
+  .restriction{
+    width: 100vw;
+    display: flex;
+    height: max-content;
+    position: relative;
+    
+    padding: 10px;
+    text-align: center;
+  }
+  .endcontent{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .end{
+    width: 100vw;
+    position: relative;
+    right: 20px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+  }
+  .gicontact{
+    position: relative;
+    right: 25px;
+  }
+  .branches{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 25px;
+    position: relative;
+    right: 20px;
+    height: max-content;
+  }
+  
+   .cities{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footerimage{
+    width: 70vw;
+  }
+  .socialmed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .mailin{
+    height: 50px;
+  }
+  .mailbt{
+    height: 50px;
+    border: none;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    margin-left: 45vw;
+
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: red;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }
 
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}
 
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -497,6 +737,13 @@ top: 50px;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100vw;
+    align-items: center;
+  }
+  .ctinfo{
+    display: none;
+  }
+  .btns{
+    display: flex;
   }
 
   .navbar {
@@ -532,6 +779,18 @@ top: 50px;
     width: 90%;
     left: 0;
   }
+  .FAP{
+    width: 100vw;
+    position: relative;
+    right: 40px;
+    height: max-content;
+    
+    
+  }
+  .fap{
+    position: relative;
+    left: 130px;
+  }
 
   .prof,
   .u1,
@@ -543,6 +802,68 @@ top: 50px;
   .table {
     width: 90%;
     left: auto;
+    height: max-content;
+    margin-left: 75px;
+    
+  }
+  .susp{
+    position: relative;
+    left: 100px;
+    bottom: 35px;
+
+  }
+  .sushis{
+    position: relative;
+    left: 35px;
+  }
+   .restriction{
+    width: 95vw;
+    display: flex;
+    height: max-content;
+    position: relative;
+    right: 45px;
+    padding: 10px;
+    text-align: center;
+  }
+  .endcontent{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+  }
+  .end{
+    width: 100vw;
+    position: relative;
+    right: 45px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .gicontact{
+    position: relative;
+    right: 45px;
+  }
+  .branches{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: relative;
+    right: 45px;
+    height: max-content;
+  }
+   .cities{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .socialmed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
   }
 }
 
@@ -712,6 +1033,7 @@ top: 50px;
 }
 .logbackg{
   background-image: url(bg9.jpg);
+  
   width: 110%;
   position: fixed;
   right: 1px;
@@ -734,6 +1056,7 @@ top: 50px;
   justify-content: space-between;
   padding-left: 90px;
   margin-bottom: 50px;
+  z-index: 10;
   
 }
 .loginput{
@@ -854,16 +1177,16 @@ top: 50px;
   border: none;
  
 }
-/* Dropdown wrapper */
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Hidden menu */
+
 .dropdown-menu {
   position: absolute;
-  top: 40px; /* below navbar */
+  top: 40px;
   left: 0;
   background-color: white;
   min-width: 160px;
@@ -876,7 +1199,7 @@ top: 50px;
   left: 250px;
 }
 
-/* Dropdown items */
+
 .dropdown-item {
   padding: 10px 15px;
   border: none;
@@ -1053,6 +1376,186 @@ select[multiple] {
 }
 .bnkdtls{
   text-align: center;
+}
+.succon{
+  position: relative;
+  right: 150px;
+  bottom: 75px;
+}
+.contacttable{
+  width: 90%;
+  justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 200px;
+  position: relative;
+  bottom: 100px;
+}
+.contactitem{
+  width: 260px;
+   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 7px;
+}
+.contacticon{
+  background-color: orange;
+  border-radius: 50%;
+  color: white;
+  width: 75px;
+  height: 75px;
+  border: none;
+  font-size: x-large;
+  position: relative;
+  
+  
+}
+.contactinputtable{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  color: orange;
+  line-height: 1px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 75px;
+  
+  position: relative;
+  bottom: 150px;
+}
+.contactinputbox{
+  width: 600px;
+  height: 40px;
+  background-color: rgba(231, 218, 218, 0.267);
+  border-width: 1px;
+  border-color: rgba(196, 192, 192, 0.338);
+}
+.contactmessagebox{
+  width: 1310px;
+  height: 200px;
+  background-color: rgba(231, 218, 218, 0.267);
+  border-width: 1px;
+  border-color: rgba(196, 192, 192, 0.338);
+}
+.contactsubmitbtn{
+  width: 1315px;
+  background: linear-gradient(to right,orange,red);
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 576px) {
+ 
+
+
+  .logbox {
+    width: 80vw ;
+    padding: 20px ;
+    height: auto ;
+    
+  }
+  .loginput {
+    width: 100%;
+  }
+  .logsubmit{
+    width: 100%;
+  }
+  .frgtpass{
+    position: relative;
+    left: 10px;
+  }
+  .branches1{
+width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 30px;
+    position: relative;
+    left: 0px;
+    
+    height: max-content;
+  }
+  .signbox{
+    width: 90vw;
+    padding: 50px;
+  }
+  .abtyrself{
+    width: 100%;
+  }
+  .mobverify{
+    padding-left: 50px;
+  }
+  .reginput1{
+    
+  }
+  .searchbox{
+    padding: 30px;
+    width: 90vw;
+  }
+  .srchgenin{
+    width: 65vw;
+  }
+  .srchgeninmul{
+     width: 65vw;
+  }
+  .srchagein{
+     width: 65vw;
+  }
+  .srchgeninmul1{
+    width: 65vw;
+  }
+  .memberplan{
+    margin-left: 20px;
+  }
+  .memberpay{
+   margin-left: 20px; 
+  }
+  .succon{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sushd{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+  }
+  .contacttable{
+    flex-direction: column;
+    padding: 0px;
+    position: relative;
+    bottom: 0px;
+    align-items: center;
+  }
+  .contactinputtable{
+    bottom: 0px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+  }
+  .contactinputbox{
+    width: 90vw;
+  }
+  .contactmessagebox{
+    width: 90vw;
+  }
+  .contactsubmitbtn{
+    width: 90vw;
+  }
+  .susp{
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+  }
 }
 
 
